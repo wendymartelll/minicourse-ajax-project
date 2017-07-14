@@ -33,11 +33,6 @@ function loadData() {
     return false;
 };
 
-$.ajax({
-  dataType: "json",
-  url: url,
-  data: data,
-  success: success
-});
+
 
 $('#form-container').submit(loadData);
